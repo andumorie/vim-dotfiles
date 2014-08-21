@@ -246,7 +246,6 @@ function! OmniPopup(action)
     return a:action
 endfunction
 
-
 " Python folding
 " mkdir -p ~/.vim/ftplugin
 " wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
