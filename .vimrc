@@ -110,11 +110,14 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 
 
 " Color scheme
-" mkdir -p ~/.vim/colors && cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
-color wombat256mod
+colorscheme mustang
 
+set guioptions=aAce
+set transparency=3
+
+set guifont=DejaVu\ Sans\ Mono
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
@@ -228,8 +231,6 @@ set wildignore+=*/coverage/*
 " cd ~/.vim/bundle
 " git clone git://github.com/davidhalter/jedi-vim.git
 let g:jedi#usages_command = "<leader>z"
-let g:jedi#popup_on_dot = 0
-let g:jedi#popup_select_first = 0
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " Better navigating through omnicomplete option list
